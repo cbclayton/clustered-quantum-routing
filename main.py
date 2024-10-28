@@ -60,7 +60,7 @@ def simulate_Waxman_constant(seed, T, algs=['QuARC', 'Q-CAST', 'ALG-N-FUSION'], 
 
     requests_file = os.path.join('requests', '%s_requests_n%d_%d.txt' % (request_type, len(net.G.nodes), seed))
     if not os.path.exists(requests_file):
-        print("Generating requests file: %s" % requests_file)
+        # print("Generating requests file: %s" % requests_file)
         state = random.getstate()
         gen_requests_file(requests_file, net, seed, request_type)
         random.setstate(state)
@@ -120,7 +120,7 @@ def simulate_learning(seed, T, ps, qs, N=16, nsd=10, algs='all'):
     net = BlobbedGridNetwork(N=N, cap=1)
     requests_file = os.path.join('requests', 'random_requests_n%d.txt' % len(net.G.nodes))
     if not os.path.exists(requests_file):
-        print("Generating requests file: %s" % requests_file)
+        # print("Generating requests file: %s" % requests_file)
         state = random.getstate()
         gen_requests_file(requests_file, net, seed, 'random')
         random.setstate(state)
