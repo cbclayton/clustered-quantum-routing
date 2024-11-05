@@ -3,6 +3,8 @@
 This repo contains the source code for QuARC (Quantum Adaptive Routing Using Clusters), the cluster-based quantum routing protocol introduced in the paper 
 *Efficient Routing on Quantum Networks using Adaptive Clustering* which appeared in [ICNP 2024](https://icnp24.cs.ucr.edu).
 
+You can find our paper [here](https://arxiv.org/pdf/2410.23007).
+
 ## Running QuARC
 
 To run QuARC, first install Python >= 3.10. This step is platform specific.
